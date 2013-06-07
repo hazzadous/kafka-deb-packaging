@@ -35,7 +35,7 @@ tar zxf ${origdir}/${src_package}
 cd kafka-${version}-src
 ./sbt update
 ./sbt package
-mv config/log4j.properties config/server.properties ../build/etc/kafka
+mv config/server.properties ../build/etc/kafka
 mv * ../build/usr/lib/kafka
 cd ../build
 
